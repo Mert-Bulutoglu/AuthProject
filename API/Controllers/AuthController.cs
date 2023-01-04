@@ -116,6 +116,7 @@ namespace API.Controllers
                         Result = false
                     });          
                 }
+
                 var jwtToken = GenerateJwtToken(existingUser);
 
                 return Ok(new AuthResult()
